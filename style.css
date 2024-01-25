@@ -1,4 +1,6 @@
-/* :root {} */
+:root {
+    --background:#0f172a;
+}
 
 *,
 *::after,
@@ -7,6 +9,25 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--background);
+}
 .container {
     max-width: 1440px;
+    padding: 20px 100px ;
+    margin: 0 auto;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.header-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.header-link__url {
+    text-decoration: none;
+    display: inline-flex;
 }
