@@ -8,15 +8,23 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 body {
-    font-family: 'Roboto', sans-serif;
     background: var(--background);
+    color: white;
+    justify-content: center;
+    text-align: center;
 }
 .container {
     max-width: 1440px;
     padding: 20px 100px ;
     margin: 0 auto;
+}
+.hero-section__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 .header-nav {
     display: flex;
@@ -30,4 +38,25 @@ body {
 .header-link__url {
     text-decoration: none;
     display: inline-flex;
+}
+.card__image {
+    width: 100%;
+}
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: white 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.card img {
+    border-radius: 10px ;
 }
